@@ -1,163 +1,200 @@
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html{
-    font-size: 62.5%;
+html {
+  font-size: 62.5%;
 }
-  
+
 body {
-    font-family: 'League Spartan', sans-serif;
+  font-family: "League Spartan", sans-serif;
 }
 
-.container{
-    width: 90%;
-    margin-inline: auto;
-    margin-block: 5rem;
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-     @media (min-width:76.8rem) {
-        width: 80%;
-        display: flex;
-        flex-direction: column;
-        gap: 5rem;
-     }
+.container {
+  width: 90%;
+  margin-inline: auto;
+  margin-block: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
 
-
-.about{
-    width: 100%;
-    margin-bottom: 3rem;
-    @media (min-width:76.8rem) {
-        width: 40%;
-        text-align: left;
-    }
-    
+.about-ratings {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid black;
 }
 
-.about h3{
-    width: 80%;
-    margin-inline: auto;
-    margin-bottom: 2rem;
-    color: hsl(300, 43%, 22%);
-    font-size: 2.8rem;
-    font-weight: 700;
-    text-align: center;
+.about {
+  width: 50%;
 }
 
-.about p{
-    width: 100%;
-    color: hsl(300, 43%, 22%);
-    font-size: 1.5rem;
-    font-weight: 400;
-    text-align: center;
-    line-height: 2.3rem;
-    opacity: .5;
+.about h3 {
+  width: 50%;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+  color: hsl(300, 43%, 22%);
+  font-size: 3.2rem;
+  font-weight: 700;
+  text-align: left;
+  border: 1px solid black;
 }
 
-.ratings{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    @media (min-width:76.8rem) {
-        width: 50%;
-    }
+.about p {
+  width: 70%;
+  color: hsl(300, 43%, 22%);
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: center;
+  line-height: 2.3rem;
+  opacity: 0.5;
+  text-align: left;
 }
 
-.rate{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: .7rem;
-    align-items: center;
-    padding-block: 1rem;
-    border-radius: .5rem;
-    background-color: hsl(300, 24%, 96%);
-    @media (min-width:76.8rem) {
-        
-        display: flex;
-        align-items: center;
-        gap: 1.2rem;
-        padding-block: .8rem;
-    }
+.ratings {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  border: 1px solid black;
 }
 
-.stars{
-    display: flex;
-    gap: .8rem;
+.rate {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  align-items: center;
+  padding-block: 1rem;
+  border-radius: 0.5rem;
+  background-color: hsl(300, 24%, 96%);
 }
 
-.rate h5{
-    color: hsl(300, 43%, 22%);
-    font-size: 1.4rem;
-    font-weight: 700;
-    line-height: 2.2rem;
+.stars {
+  display: flex;
+  gap: 0.8rem;
 }
 
-.reviews{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 1.8rem;
+.rate h5 {
+  color: hsl(300, 43%, 22%);
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 2.2rem;
 }
 
-.review{
-    background-color: hsl(300, 43%, 22%);
-    padding: 3rem 2.5rem;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    border-radius: .7rem;
+.reviews {
+  /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
 }
 
-.review p{
-    font-weight: 500;
-    font-size: 1.5rem;
-    line-height: 2.3rem;
-    color: hsl(0, 0%, 100%);
+.review {
+  background-color: hsl(300, 43%, 22%);
+  padding: 3rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border-radius: 0.7rem;
 }
 
-.review-head{
-    display: flex;
-    align-items: center;
-    gap: 2rem;
+.review p {
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 2.3rem;
+  color: hsl(0, 0%, 100%);
 }
 
-.rev-img{
-    width: 4rem;
-}
-img{
-    width: 100%;
-    border-radius: 10rem;
+.review-head {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
 }
 
-.rev-user{
-    display: block;
+.rev-img {
+  width: 4rem;
 }
-.rev-user h5{
-    font-size: 1.5rem;
-    font-weight: 700;
-    line-height: 2.3rem;
-    color: hsl(0, 0%, 100%);
-}
-.rev-user p{
-    font-weight: 500;
-    font-size: 1.5rem;
-    line-height: 2.3rem;
-    color: hsl(333, 80%, 67%);
+img {
+  width: 100%;
+  border-radius: 10rem;
 }
 
+.rev-user {
+  display: block;
+}
+.rev-user h5 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2.3rem;
+  color: hsl(0, 0%, 100%);
+}
+.rev-user p {
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 2.3rem;
+  color: hsl(333, 80%, 67%);
+}
 
 .attribution {
-    font-size: 11px;
-    text-align: center;
+  font-size: 1.1rem;
+  text-align: center;
 }
 .attribution a {
-    color: hsl(228, 45%, 44%);
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 47rem) {
+  .container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+  }
+
+  .about-ratings {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .about {
+    width: 60%;
+    text-align: right;
+  }
+
+  .rate {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    padding: 0.8rem;
+  }
+
+  .reviews {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  /* .irene{
+        position: absolute;
+        bottom: 2rem;
+    }
+
+    .anne{
+        position: absolute;
+        bottom: 4rem;
+        right: 0;
+    } */
 }
